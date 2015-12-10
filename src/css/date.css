@@ -1,0 +1,48 @@
+*{margin: 0;padding: 0}
+p{padding: 20px 5px;border-bottom: 1px solid #ccc;font-size: 30px}
+em{
+    color: #f00;
+}
+.date{
+    text-align: center;
+}
+.date-marker-body{
+    width: 100%;
+    display: block;
+}
+.date-marker-body:after{
+    content: '.';
+    display: table;
+    height: 1px;
+    width: 0;
+    clear: both;
+}
+li{
+    float: left;
+    position: relative;
+    padding-top: 20px;
+    text-align: center;
+    width: 13%;
+    list-style: none;
+    height: 50px;
+    vertical-align: middle;
+    box-sizing: border-box;
+}
+li.active{
+    background: #f00;
+    color: #fff;
+}
+li em{
+    position: absolute;
+    width: 100%;
+    height: 14px;
+    line-height: 14px;
+    top:5px;
+    left: 0;
+    color: #fff;
+    font-size: 12px;
+    font-style: normal;
+}
+.date-marker-prev{
+  color:#ccc;
+}
